@@ -1,0 +1,93 @@
+body {
+    text-align: center;
+    background: linear-gradient(135deg, #f4f4f4, #dcdcdc);
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+
+/* CSS for the header */
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-top: 20px;
+}
+
+
+/* CSS for the form */
+
+#courseForm {
+    background: linear-gradient(135deg, #fff, #e0e0e0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#course {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="button"] {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #0056b3, #007bff);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* CSS for the table */
+
+#gradeTable {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: linear-gradient(135deg, #fff, #e0e0e0);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: linear-gradient(135deg, #0073e6, #0056b3);
+    color: #fff;
+}
+
+#cgpa {
+    font-size: 24px;
+    color: #333;
+}
+
+button[type="button"] {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #0056b3, #007bff);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    background: linear-gradient(135deg, #0073e6, #0056b3);
+}
+
+footer {
+    margin-top: 40px;
+    /* Increased top margin for more space */
+    padding: 20px 0;
+    /* Added padding for space above and below content */
+    background: linear-gradient(135deg, #f0f0f0, #ffffff);
+    /* Gradient background */
+}

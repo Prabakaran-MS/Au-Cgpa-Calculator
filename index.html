@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="./script.js"></script>
+    <!-- Include the xlsx library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
+</head>
+
+<body onload="loadPage()">
+    <center>
+        <h1>AU CGPA CALCULATOR</h1>
+
+        <form id="courseForm">
+            <label for="course">Select the courses to calculate CGPA:</label>
+            <select id="course" multiple></select>
+            <button type="button" onclick="addCourse()">Add Courses</button>
+        </form>
+
+        <table id="gradeTable">
+            <thead>
+                <tr>
+                    <th>Course</th>
+                    <th>Grade</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="courseTable"></tbody>
+        </table>
+
+
+
+        <footer>
+            <h3 id='cgpa'></h3>
+            <button onclick="cgpa()">calculate CGPA</button>
+        </footer>
+
+    </center>
+</body>
+
+</html>
