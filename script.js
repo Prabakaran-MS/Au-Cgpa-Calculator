@@ -29,6 +29,7 @@ async function getExcelFile(path) {
     }
 }
 
+
 function getColumnData(data, column) {
     return data.map(item => item[column]);
 }
@@ -75,6 +76,7 @@ function addCourse() {
             option.textContent = grade;
             gradeSelect.appendChild(option);
         });
+        gradeSelect.className = 'form-select';
 
         gradeColumn.appendChild(gradeSelect);
         newRow.appendChild(gradeColumn);
@@ -82,6 +84,7 @@ function addCourse() {
         const actionColumn = document.createElement("td");
         const deleteButton = document.createElement("button");
         deleteButton.textContent = "Delete";
+        deleteButton.className = 'btn btn-danger';
 
         deleteButton.addEventListener("click", function() {
             courseTable.removeChild(newRow);
@@ -140,3 +143,5 @@ function cgpa() {
     document.getElementById('cgpa').innerHTML = txt + cgpaValue.toFixed(2);
     console.log(data);
 }
+
+loadPage();

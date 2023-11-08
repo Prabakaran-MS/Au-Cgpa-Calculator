@@ -1,6 +1,6 @@
 # AU CGPA Calculator
 
-![CGPA Calculator Screenshot](./screenshot.png)
+![CGPA Calculator Screenshot](image.png)
 
 This web-based CGPA (Cumulative Grade Point Average) calculator is designed for students at AU (Acme University) to easily calculate their CGPA based on their course credits and letter grades. The calculator provides a user-friendly interface for adding courses and their corresponding grades, and it displays the calculated CGPA.
 

@@ -6,24 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CGPA Calculator</title>
     <link rel="icon" href="icon.png">
-    <link rel="stylesheet" href="styles.css">
-
-    <script src="./script.js"></script>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <!-- Include the xlsx library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
 </head>
 
-<body onload="loadPage()">
-    <center>
-        <h1>AU CGPA CALCULATOR</h1>
+<body>
+    <div class="container">
+        <h1 class="display-2 text-center">AU CGPA CALCULATOR</h1>
 
-        <form id="courseForm">
-            <label for="course">Select the courses to calculate CGPA:</label>
-            <select id="course" multiple></select>
-            <button type="button" onclick="addCourse()">Add Courses</button>
+        <form id="courseForm" class="shadow rounded p-2 d-flex flex-column justify-content-center align-items-center">
+            <label class="form-label" for="course">Select the courses to calculate CGPA</label>
+            <select class="form-select mx-2" id="course" multiple></select>
+            <button class="btn btn-primary mt-2" type="button" onclick="addCourse()">Add Courses</button>
         </form>
 
-        <table id="gradeTable">
+        <table id="gradeTable" class="table table-striped table-hover table-bordered mt-3 text-center shadow">
             <thead>
                 <tr>
                     <th>Course</th>
@@ -36,12 +35,14 @@
 
 
 
-        <footer>
+        <footer class="text-center mb-5">
             <h3 id='cgpa'></h3>
-            <button onclick="cgpa()">calculate CGPA</button>
+            <button class="btn btn-primary" onclick="cgpa()">calculate CGPA</button>
         </footer>
 
-    </center>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
